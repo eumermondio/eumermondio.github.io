@@ -23,15 +23,16 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./js/scripts.js"></script>
     <script src="node_modules/fullpage.js/dist/fullpage.min.js"></script>
-
+    <!-- BS5 icons -->
     <link href="node_modules\bootstrap-icons\font\bootstrap-icons.css" rel="stylesheet" />
+
 </head>
 
 <body>
     <header class="container-fluid bg-secondary text-white position-fixed">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="p-0"><span class="fw-bold">Cristian</span> Pacheco Arjona</h1>
+                <h2 class="p-0"><span class="fw-bold">Cristian</span> Pacheco Arjona</h2>
                 <p class="fw-bold">
                     Web <span class="fw-bold">developer</span>
                 </p>
@@ -40,22 +41,27 @@
     </header>
     <div id="main">
         <div class="section active">1</div>
-        <div class="section">2</div>
+        <div class="section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4"> <img src="./assets/img/20945365.jpg" class="imagenLado"></div>
+                    <div class="col-md-8"></div>
+                </div>
+            </div>
+        </div>
         <div class="section">3</div>
         <div class="section">4</div>
+        <div class="section">
+            <div class="slide">
+                <h1 class="text-center">Cr&eacute;ditos</h1>
+            </div>
+            <div class="slide"><a class="text-dark" href="http://www.freepik.com">Designed
+                    by vectorjuice / Freepik</a></div>
+        </div>
     </div>
-    <footer>
-
-    </footer>
-    <script>
-        var myFullpage = new fullpage('#main', {
-            autoScrolling: true,
-            scrollHorizontally: false,
-            sectionsColor: ['black', 'white', 'black', 'white'],
-            loopBottom: true,
-            navigation: true,
-        });
-    </script>
 </body>
 
 </html>
+<!-- Imagenes de la pagina
+<a class="text-dark enlace" href="http://www.freepik.com">Designed by vectorjuice / Freepik</a>
+-->
