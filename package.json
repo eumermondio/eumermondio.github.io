@@ -9,6 +9,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2",
     "fullpage.js": "^4.0.15"
   },
   "description": ""

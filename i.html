@@ -23,10 +23,12 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./js/scripts.js"></script>
     <script src="node_modules/fullpage.js/dist/fullpage.min.js"></script>
+
+    <link href="node_modules\bootstrap-icons\font\bootstrap-icons.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="position-fixed container-fluid bg-secondary text-white">
+    <header class="container-fluid bg-secondary text-white position-fixed">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="p-0"><span class="fw-bold">Cristian</span> Pacheco Arjona</h1>
@@ -37,21 +39,22 @@
         </div>
     </header>
     <div id="main">
-        <div class="bg-secondary section active">1</div>
-        <div class="bg-primary section">2</div>
-        <div class="bg-secondary section">3</div>
-        <div class="bg-primary section">4</div>
+        <div class="section active">1</div>
+        <div class="section">2</div>
+        <div class="section">3</div>
+        <div class="section">4</div>
     </div>
     <footer>
 
     </footer>
     <script>
-        var myFullpage = new fullpage('#main');
-        new fullpage('#main', {
+        var myFullpage = new fullpage('#main', {
             autoScrolling: true,
-            scrollHorizontally: false
+            scrollHorizontally: false,
+            sectionsColor: ['black', 'white', 'black', 'white'],
+            loopBottom: true,
+            navigation: true,
         });
-        document.querySelector(".fp-watermark").parentNode.removeChild(document.querySelector(".fp-watermark"));
     </script>
 </body>
 
