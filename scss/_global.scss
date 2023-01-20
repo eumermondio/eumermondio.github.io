@@ -10,6 +10,14 @@
 html {
     height: 100%;
     scroll-padding-top: calc(#{$navbar-height} - 1px);
+
+    & * {
+        box-sizing: border-box;
+    }
+
+    &>body {
+        height: 100%;
+    }
 }
 
 // Styling for page sections
